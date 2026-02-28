@@ -5,17 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Premium Handcrafted Pens</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; color: #333; background: #f9f9f9; }
-        header { background: #2c3e50; color: white; padding: 2rem; text-align: center; }
-        .container { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-        .pen-card { background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.2s; }
-        .pen-card:hover { transform: translateY(-5px); }
-        .pen-img { width: 100%; height: 250px; background: #ddd; object-fit: cover; }
-        .pen-info { padding: 1.5rem; }
-        .price { font-size: 1.5rem; color: #27ae60; font-weight: bold; }
-        .buy-btn { display: block; width: 100%; padding: 10px; background: #e67e22; color: white; text-align: center; text-decoration: none; border-radius: 5px; margin-top: 1rem; font-weight: bold; }
-        .buy-btn:hover { background: #d35400; }
-    </style>
+    /* Global Reset & Classic Fonts */
+    body { 
+        font-family: 'Garamond', 'Georgia', serif; 
+        margin: 0; 
+        padding: 0; 
+        color: #1a1a1a; 
+        background: #ffffff; /* Clean white background */
+        line-height: 1.6;
+    }
+
+    /* Elegant Dark Header */
+    header { 
+        background: #1a1a1a; /* Deep black */
+        color: #ffffff; 
+        padding: 4rem 2rem; 
+        text-align: center; 
+        border-bottom: 4px solid #4a4a4a; /* Dark grey accent */
+    }
+
+    header h1 { 
+        font-size: 3rem; 
+        letter-spacing: 2px; 
+        margin: 0; 
+        text-transform: uppercase;
+    }
+
+    /* Product Grid */
+    .container { 
+        max-width: 1100px; 
+        margin: 3rem auto; 
+        padding: 0 1.5rem; 
+        display: grid; 
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+        gap: 40px; 
+    }
+
+    /* Pen Cards - Minimalist Style */
+    .pen-card { 
+        background: #ffffff; 
+        border: 1px solid #e0e0e0; /* Subtle grey border */
+        overflow: hidden; 
+        transition: all 0.3s ease; 
+    }
+
+    .pen-card:hover { 
+        border-color: #1a1a1a; 
+        box-shadow: 0 10px 20px rgba(0,0,0,0.05); 
+    }
+
+    .pen-img { 
+        width: 100%; 
+        height: 280px; 
+        background: #f5f5f5; /* Light grey placeholder */
+        object-fit: cover; 
+        filter: grayscale(20%); /* Slight desaturation for that 'classic' look */
+    }
+
+    .pen-info { 
+        padding: 2rem; 
+        text-align: center;
+    }
+
+    .pen-info h3 { 
+        margin-top: 0; 
+        font-size: 1.5rem; 
+        color: #000;
+    }
+
+    .price { 
+        font-size: 1.2rem; 
+        color: #666; /* Muted grey for price */
+        margin-bottom: 1.5rem;
+        font-style: italic;
+    }
+
+    /* High-Contrast Buy Button */
+    .buy-btn { 
+        display: inline-block; 
+        width: 80%; 
+        padding: 12px; 
+        background: #1a1a1a; /* Solid black */
+        color: #ffffff; 
+        text-align: center; 
+        text-decoration: none; 
+        font-weight: bold; 
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: background 0.2s;
+    }
+
+    .buy-btn:hover { 
+        background: #4a4a4a; /* Slate grey on hover */
+    }
+
+    /* Footer for Trust */
+    footer {
+        text-align: center;
+        padding: 3rem;
+        font-size: 0.9rem;
+        color: #999;
+        border-top: 1px solid #eee;
+    }
+</style>
 </head>
 <body>
 
@@ -49,3 +141,4 @@
 </body>
 
 </html>
+
