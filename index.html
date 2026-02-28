@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Handcrafted Pens</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; color: #333; background: #f9f9f9; }
+        header { background: #2c3e50; color: white; padding: 2rem; text-align: center; }
+        .container { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .pen-card { background: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.2s; }
+        .pen-card:hover { transform: translateY(-5px); }
+        .pen-img { width: 100%; height: 250px; background: #ddd; object-fit: cover; }
+        .pen-info { padding: 1.5rem; }
+        .price { font-size: 1.5rem; color: #27ae60; font-weight: bold; }
+        .buy-btn { display: block; width: 100%; padding: 10px; background: #e67e22; color: white; text-align: center; text-decoration: none; border-radius: 5px; margin-top: 1rem; font-weight: bold; }
+        .buy-btn:hover { background: #d35400; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>The Pen Shop</h1>
+    <p>Fine writing instruments for the modern creator.</p>
+</header>
+
+<div class="container">
+    <div class="pen-card">
+        <img src="https://via.placeholder.com/400x250" alt="Executive Fountain Pen" class="pen-img">
+        <div class="pen-info">
+            <h3>Executive Fountain Pen</h3>
+            <p>Hand-turned oak barrel with a polished gold-plated nib. Smooth flow for daily journaling.</p>
+            <div class="price">$45.00</div>
+            <a href="YOUR_PAYMENT_LINK_HERE" class="buy-btn">Buy Now</a>
+        </div>
+    </div>
+
+    <div class="pen-card">
+        <img src="https://via.placeholder.com/400x250" alt="Midnight Rollerball" class="pen-img">
+        <div class="pen-info">
+            <h3>Midnight Rollerball</h3>
+            <div class="price">$32.00</div>
+            <p>Matte black finish with a balanced weight. Perfect for professional signatures.</p>
+            <a href="YOUR_PAYMENT_LINK_HERE" class="buy-btn">Buy Now</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
